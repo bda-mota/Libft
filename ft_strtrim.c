@@ -12,45 +12,48 @@
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set) 
 {
-	char	*copy_s1;
-	int		i;
-	int		j;
-	int		size_s1;
+	int	size;
+	int	i;
+    int	start;
+    int	end;
+	char *copy_s1;
 
 	i = 0;
-	j = 0;
-	if (!copy_s1)
-		return (NULL);
-	while (s1[i])
+	start = 0;
+	end = ft_strlen(s1) - 1;
+    while (s1[start] != '\0' && ft_strchr(set, s1[start]))
+        start++;
+    while (end >= start && ft_strchr(set, s1[end]))
+        end--;
+    size = end - start + 1;
+   if (size < 0)
+        size = 0;
+    copy_s1 = malloc(sizeof(char) * (size + 1));
+    if (!copy_s1) {
+        return NULL;
+    }
+	while (i < size)
 	{
-		if (s1[i] == set[i])
-		{
-			i++;
-			j++;
-		}
-		else
-		{
-			copy_s1[j] = s1[i];
-			j++;
-			i++;
-		}
+		copy_s1[i] = s1[start + i];
+		i++;
 	}
-	copy_s1[j] = '\0';
-	return (copy_s1);
+    copy_s1[size] = '\0';
+    return (copy_s1);
 }
 
 #include <stdio.h>
 
-int	main(void)
-{
-	char	s1[] = "bia bia mota bia";
-	char	s2[] = "bia";
-	char	*result;
+int main(void) {
+    char s1[] = "biabia mota mota bia mota bia";
+    char s2[] = "";
+    char *result;
 
-	printf("%s\n", s1);
-	result = ft_strtrim(s1, s2);
-	printf("%s\n", result);
-	return (0);
+    printf("%s\n", s1);
+    result = ft_strtrim(s1, s2);
+    printf("%s\n", result);
+
+    free(result);
+    return 0;
 }
