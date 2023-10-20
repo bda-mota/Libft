@@ -45,7 +45,7 @@ char f(unsigned int i, char c)
 
 int main()
 {
-	char str1[] = "abc";
+	char str1[] = "123";
 	char *str2;
 	str2 = ft_strmapi(str1, *f);
 	printf("%s\n", str2);
