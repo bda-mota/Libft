@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 15:47:07 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/21 10:14:02 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/21 11:26:31 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,4 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	new_str[i] = '\0';
 	return (new_str);
-}
-
-#include <stdio.h>
-
-char f(unsigned int i, char c)
-{
-	char str;
-	str = c + '0';
-	return (str);
-}
-
-int main()
-{
-	char str1[] = "123";
-	char *str2;
-	str2 = ft_strmapi(str1, *f);
-	printf("%s\n", str2);
 }
