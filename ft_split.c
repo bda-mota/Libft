@@ -6,11 +6,8 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 10:45:32 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/21 10:45:44 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/23 15:45:30 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	**ft_split(char const *s, char c)
-{
-	
-}
+char	**ft_split(char const *s, char c);

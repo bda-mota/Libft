@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:18 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/19 14:03:17 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/23 15:46:49 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char		*str;
-	size_t				i;
+	unsigned const char		*str;
+	size_t					i;
 
 	str = s;
 	i = 0;

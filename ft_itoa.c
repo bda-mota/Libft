@@ -6,15 +6,15 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 10:45:46 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/21 12:35:54 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/23 19:28:13 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size_n(int n)
+int	size_n(long int n)
 {
-	int	size;
+	long int	size;
 
 	size = 0;
 	if (n == 0)
@@ -34,30 +34,29 @@ int	size_n(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	int		i;
-	int		size;
+	char		*str;
+	char		result;
+	long int	size;
+	long int	nbr;
 
-	i = 0;
-	size = size_n(n);
-	str = malloc(sizeof(char) * size + 1);
-	if (n < 0)
+	nbr = n;
+	size = size_n(nbr);
+	str = ft_calloc((size + 1), 1);
+	if (!str)
+		return (NULL);
+	str[size + 1] = '\0';
+	if (nbr == 0)
+		str[0] = n + '0';
+	while (size-- && nbr != 0)
 	{
-		n = -n;
-		str[i] = '-';
-		i++;
+		if (nbr < 0)
+		{
+			nbr *= -1;
+			str[0] = '-';
+		}
+		result = nbr % 10 + '0';
+		str[size] = result;
+		nbr /= 10;
 	}
-	str[i] = n + '0';
 	return (str);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	int	x;
-
-	x = -1;
-	printf("%s\n", ft_itoa(x));
-
 }
