@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:24 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/17 14:19:09 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/24 12:53:27 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const unsigned char	*s;
+	unsigned const char	*s;
 	unsigned char		*d;
 	size_t				i;
 

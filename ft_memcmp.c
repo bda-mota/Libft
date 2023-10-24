@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:21 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/19 16:35:56 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/24 12:53:13 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned int		i;
-	const unsigned char	*p1;
-	const unsigned char	*p2;
+	unsigned const char	*p1;
+	unsigned const char	*p2;
 
 	p1 = s1;
 	p2 = s2;
