@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:39:28 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/23 15:50:09 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/25 18:45:17 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write (fd, &c, fd);
+	write (fd, &c, 1);
 }
