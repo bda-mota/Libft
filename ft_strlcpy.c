@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:42 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/18 19:07:20 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/25 20:38:20 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	i = 0;
 	if (size == 0)
 		return (ft_strlen(src));
-	while (src[i] != '\0' && i < (size - 1))
+	while (src[i] && i < (size - 1))
 	{
 		dst[i] = src[i];
 		i++;

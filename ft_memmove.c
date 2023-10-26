@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:33 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/23 15:48:46 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/25 20:15:40 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t					i;
-	unsigned char			*d;
 	unsigned const char		*s;
+	unsigned char			*d;
+	size_t					i;
 
-	d = dest;
 	s = src;
+	d = dest;
 	if (d < s)
 		ft_memcpy(dest, src, n);
 	else if (d > s)

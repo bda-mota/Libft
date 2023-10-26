@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:29:59 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/23 16:07:46 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/25 20:28:18 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*dest;
-	int		i;
-	int		size_s1;
-	int		size_s2;
+	size_t	i;
+	size_t	size_s1;
+	size_t	size_s2;
 
 	i = 0;
 	size_s1 = ft_strlen(s1);
 	size_s2 = ft_strlen(s2);
-	dest = malloc(sizeof(char) * (size_s1 + size_s2 + 1));
+	dest = ft_calloc((size_s1 + size_s2 + 1), 1);
 	if (!dest)
 		return (NULL);
 	ft_memcpy(dest, s1, size_s1);
@@ -31,6 +31,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		dest[size_s1 + i] = s2[i];
 		i++;
 	}
-	dest[size_s1 + i] = '\0';
 	return (dest);
 }

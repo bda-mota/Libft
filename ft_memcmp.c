@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:21 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/24 12:53:13 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/25 20:12:46 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	while (p1[i] == p2[i] && i < (n - 1))
+	while (i < (n - 1) && p1[i] == p2[i])
 	{
 		i++;
 	}

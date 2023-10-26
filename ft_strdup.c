@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 18:50:08 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/18 19:07:08 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/25 20:22:00 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 char	*ft_strdup(const char *s)
 {
 	char	*dest;
-	int		size;
-	int		i;
+	size_t	size;
+	size_t	i;
 
 	i = 0;
 	size = ft_strlen(s);
-	dest = malloc((sizeof (char) * (size + 1)));
+	dest = ft_calloc((size + 1), 1);
 	if (!dest)
 		return (NULL);
 	else
@@ -30,7 +30,6 @@ char	*ft_strdup(const char *s)
 			dest[i] = s[i];
 			i++;
 		}
-		dest[i] = '\0';
 	}
 	return (dest);
 }
