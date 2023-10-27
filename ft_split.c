@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 10:45:32 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/25 19:46:26 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/27 10:51:51 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,22 +32,14 @@ static int	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-static char	*ft_free(size_t size)
-{
-	char	*new_str;
-
-	new_str = malloc(sizeof(char) * (size + 1));
-	if (!new_str)
-		return (NULL);
-	return (new_str);
-}
-
 static char	*ft_copy(char const *str, size_t i, size_t size)
 {
 	size_t	idx;
 	char	*new_str;
 
-	new_str = ft_free(size);
+	new_str = ft_calloc((size + 1), 1);
+	if (!new_str)
+		return (NULL);
 	idx = 0;
 	while (idx < size)
 	{
@@ -55,7 +47,6 @@ static char	*ft_copy(char const *str, size_t i, size_t size)
 		i++;
 		idx++;
 	}
-	new_str[idx] = '\0';
 	return (new_str);
 }
 

@@ -6,13 +6,13 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:26:30 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/25 21:11:03 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/27 12:57:38 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	calculation_size(char const *s1, char const *set, int size_start)
+static int	calculation_size(char const *s1, char const *set, int size_start)
 {
 	int	i;
 	int	size;

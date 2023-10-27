@@ -6,11 +6,11 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 15:04:17 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/25 19:45:40 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/27 12:58:29 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	if ((c >= 9 && c <= 13) || c == 32)
 		return (1);

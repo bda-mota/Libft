@@ -6,13 +6,13 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 10:45:46 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/25 20:04:56 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/27 12:58:38 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size_n(long int n)
+static int	size_n(long int n)
 {
 	long int	size;
 
