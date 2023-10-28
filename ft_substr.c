@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:39:45 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/23 19:08:55 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/28 15:12:04 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (ft_strdup(""));
 	if (len > (size - start))
 		len = size - start;
-	dest = ft_calloc((len + 1), 1);
+	dest = ft_calloc((len + 1), sizeof(char));
 	if (!dest)
 		return (NULL);
 	while (i < len)

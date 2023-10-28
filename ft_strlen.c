@@ -6,11 +6,13 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 20:13:56 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/10 20:22:05 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:30:53 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
 	int	count;
 

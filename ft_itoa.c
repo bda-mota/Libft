@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 10:45:46 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/27 12:58:38 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/28 15:07:26 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_itoa(int n)
 
 	nbr = n;
 	size = size_n(nbr);
-	str = ft_calloc((size + 1), 1);
+	str = ft_calloc((size + 1), sizeof(char));
 	if (!str)
 		return (NULL);
 	if (nbr == 0)

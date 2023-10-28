@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 18:26:30 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/27 12:57:38 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/28 15:11:59 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size = calculation_size(s1, set, start);
 	if (size < 0)
 		size = 0;
-	copy_s1 = ft_calloc((size + 1), 1);
+	copy_s1 = ft_calloc((size + 1), sizeof(char));
 	if (!copy_s1)
 		return (NULL);
 	while (i < size)

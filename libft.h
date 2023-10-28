@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 14:54:03 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/25 21:06:02 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/27 14:32:23 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 char	*ft_itoa(int n);
 char	*ft_strchr(const char *s, int c);
@@ -34,7 +40,6 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_memcmp(const void *ptr1, const void *ptr2, size_t num);
-int		ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
@@ -53,5 +58,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlen(const char *s);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 10:45:32 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/27 10:51:51 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/10/28 15:08:04 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static char	*ft_copy(char const *str, size_t i, size_t size)
 	size_t	idx;
 	char	*new_str;
 
-	new_str = ft_calloc((size + 1), 1);
+	new_str = ft_calloc((size + 1), sizeof(char));
 	if (!new_str)
 		return (NULL);
 	idx = 0;
