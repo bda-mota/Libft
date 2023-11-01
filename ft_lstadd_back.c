@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 21:01:22 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/11/01 16:56:43 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/11/01 20:25:28 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	}
 	curr->next = new;
 }
-
