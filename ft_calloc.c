@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:16:49 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/11/06 21:32:55 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/11/07 14:42:05 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	total_size = nmemb * size;
 	if (total_size != 0 && total_size / nmemb != size)
 		return (NULL);
-	memory = malloc(nmemb * size);
+	memory = malloc(total_size);
 	if (memory != NULL)
-		ft_bzero(memory, (nmemb * size));
+		ft_bzero(memory, total_size);
 	return (memory);
 }

@@ -6,7 +6,7 @@
 #    By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/16 15:55:15 by bda-mota          #+#    #+#              #
-#    Updated: 2023/11/01 20:54:56 by bda-mota         ###   ########.fr        #
+#    Updated: 2023/11/07 13:58:41 by bda-mota         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ bonus:	${OBONUSFILES}
 	ar rcs ${NAME} $@
 
 clean:
-	rm -f *.o
+	rm -f ${OFILES} ${OBONUSFILES}
 
 fclean: clean
 	rm -f ${NAME}

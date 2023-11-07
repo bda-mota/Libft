@@ -6,7 +6,7 @@
 /*   By: bda-mota <bda-mota@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:37:24 by bda-mota          #+#    #+#             */
-/*   Updated: 2023/10/25 20:14:59 by bda-mota         ###   ########.fr       */
+/*   Updated: 2023/11/07 14:36:07 by bda-mota         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	d = dest;
 	s = src;
 	i = 0;
-	if (d == NULL && s == NULL)
+	if (!d && !s)
 		return (dest);
 	while (i < n)
 	{
