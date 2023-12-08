@@ -7,7 +7,6 @@ This project serves as a foundational milestone, marking the beginning of my edu
 
 # Functions
 
-| Linked-List | Memory |
-|------------|
-| `ft_lstadd_back` `ft_lstadd_front` `ft_lstclear` `ft_lstdelone` `ft_lstiter` `ft_lstlast` `ft_lstmap` `ft_lstnew` `ft_lstsize` |                   
-| `ft_memchr` `ft_memcmp` `ft_memcpy` `ft_memmove` `ft_memset` |
+| Linked-List                                         | Memory                                      |
+|------------------------------------------------------|---------------------------------------------|
+| `ft_lstadd_back` `ft_lstadd_front` `ft_lstclear` `ft_lstdelone` `ft_lstiter` `ft_lstlast` `ft_lstmap` `ft_lstnew` `ft_lstsize` | `ft_memchr` `ft_memcmp` `ft_memcpy` `ft_memmove` `ft_memset` |
