@@ -7,14 +7,7 @@ This project serves as a foundational milestone, marking the beginning of my edu
 
 # Functions
 
-| Linked-List | Memory | String |
-|-------------|-------------|-------------|
-| ft_lstadd_back | ft_memchr
-| ft_lstadd_front | ft_memcmp
-| ft_lstclear | ft_memcpy
-| ft_lstdelone | ft_memmove
-| ft_lstiter | ft_memset
-| ft_lstlast |
-| ft_lstmap |
-| ft_lstnew | 
-| ft_lstsize | 
+| Linked-List |
+|-------------|
+| ft_lstadd_back ft_lstadd_front ft_lstclear ft_lstdelone ft_lstiter ft_lstlast ft_lstmap ft_lstnew ft_lstsize | 
+
