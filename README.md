@@ -7,10 +7,11 @@ This project serves as a foundational milestone, marking the beginning of my edu
 
 # Functions
 
-| Category       | Funções                                              |
+| Category       | Functions                                            |
 |----------------|------------------------------------------------------|
 | Character      | `isalpha`, `isdigit`, `isalnum`, `isascii`, `isprint` `toupper`, `tolower` |
-| Linked-List    | `ft_lstadd_back`, `ft_lstadd_front`, `ft_lstclear`, `ft_lstdelone`, `ft_lstiter`, `ft_lstlast`, `ft_lstmap`, `ft_lstnew`, `ft_lstsize` |                   
-| Memory         | `ft_memchr`, `ft_memcmp`, `ft_memcpy`, `ft_memmove`, `ft_memset` `bzero` |
-| String         | `strlen`, `strlcpy`, `strlcat`, `strchr`, `strrchr`, `strncmp`, `strnstr`, `atoi`, `calloc`, `strdup` `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_itoa`, `ft_strmapi`, `ft_striteri` |
 | FD             | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putnbr_fd`, `ft_putendl_fd` |
+| Memory         | `ft_memchr`, `ft_memcmp`, `ft_memcpy`, `ft_memmove`, `ft_memset` `bzero` |
+| Linked-List    | `ft_lstadd_back`, `ft_lstadd_front`, `ft_lstclear`, `ft_lstdelone`, `ft_lstiter`, `ft_lstlast`, `ft_lstmap`, `ft_lstnew`, `ft_lstsize` |                   
+| String         | `strlen`, `strlcpy`, `strlcat`, `strchr`, `strrchr`, `strncmp`, `strnstr`, `atoi`, `calloc`, `strdup` `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_itoa`, `ft_strmapi`, `ft_striteri` |
+
