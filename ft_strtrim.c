@@ -14,11 +14,9 @@
 
 static int	calculation_size(char const *s1, char const *set, int size_start)
 {
-	int	i;
 	int	size;
 	int	end;
 
-	i = 0;
 	end = ft_strlen(s1);
 	while (end >= size_start && ft_strchr(set, s1[end]))
 		end--;
